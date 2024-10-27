@@ -44,6 +44,10 @@ cat <<EOF >> source/include/${file_name}.${header_extension}
 #ifndef __${FILE_NAME}_${HEADER_EXTENSION}__
 #define __${FILE_NAME}_${HEADER_EXTENSION}__
 
+#include <vector>
+
+using namespace std;
+
 #endif
 EOF
 
