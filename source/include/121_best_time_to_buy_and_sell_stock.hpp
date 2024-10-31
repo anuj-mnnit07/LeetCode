@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
 
+namespace __121 {
+
 class Solution {
  public:
   int maxProfit(vector<int>& prices) {
@@ -25,4 +27,5 @@ class Solution {
   }
 };
 
+}
 #endif

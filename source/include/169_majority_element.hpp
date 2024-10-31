@@ -5,6 +5,8 @@
 #include <vector>
 using namespace std;
 
+namespace __169 {
+
 class Solution {
  public:
   int majorityElement(vector<int>& nums) {
@@ -28,4 +30,5 @@ class Solution {
   }
 };
 
+}
 #endif

@@ -3,7 +3,7 @@
 
 #include <vector>
 using namespace std;
-
+namespace __27 {
 class Solution {
   void swap(vector<int>& nums, int pos1, int pos2) {
     nums[pos1] = nums[pos1] ^ nums[pos2];
@@ -39,4 +39,5 @@ class Solution {
     return count;
   }
 };
+}
 #endif

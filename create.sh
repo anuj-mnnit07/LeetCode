@@ -2,11 +2,14 @@
 
 
 file_name=""
+name_space=""
 header_extension=hpp
 
-while getopts ":f:h:" opt; do
+while getopts ":f:n:h:" opt; do
   case $opt in
     f) file_name="$OPTARG"
+    ;;
+    n) namespace="$OPTARG"
     ;;
     h) header_extension="$OPTARG"
     ;;
@@ -16,7 +19,7 @@ while getopts ":f:h:" opt; do
   esac
 
   case $OPTARG in
-    -*) echo "Option $opt needs valid arg -f for filename and -h for header externsion hpp or h"
+    -*) echo "Option $opt needs valid arg -f for filename, -n for namespace and -h for header externsion hpp or h"
     exit 1
     ;;
   esac
@@ -27,12 +30,18 @@ if [ "${file_name}" == "" ];then
   exit 1
 fi
 
+if [ "${name_space}" == "" ];then
+  echo "Error: namespace is empty, add argument using -n namespace"
+  exit 1
+fi
+
 if [ "${header_extension}" != "hpp" ] && [ "${header_extension}" != "h" ]; then
   echo "Error: only header extension possible is h or hpp"
   exit 1
 fi
 
 echo "file_name: $file_name"
+echo "namespace: $name_space"
 echo "header_extension: $header_extension"
 
 FILE_NAME=${file_name^^}
@@ -47,7 +56,11 @@ cat <<EOF >> source/include/${file_name}.${header_extension}
 #include <vector>
 
 using namespace std;
+namespace __${name_space} {
 
+
+
+}
 #endif
 EOF
 
@@ -59,6 +72,9 @@ cat <<EOF >> test/src/${file_name}_test.cc
 #include <gtest/gtest.h>
 
 #include "${file_name}.${header_extension}"
+
+using namespace __${namespace};
+
 TEST(_${file_name}, test_1) {
   EXPECT_EQ(0, 0);
 }

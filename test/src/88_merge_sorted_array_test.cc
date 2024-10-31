@@ -1,6 +1,9 @@
 #include "88_merge_sorted_array.hpp"
 
 #include <gtest/gtest.h>
+
+using namespace __88;
+
 TEST(_88_merge_sorted_array, test_1) {
   Solution s;
   std::vector<int> num1 = {1, 2, 3, 0, 0, 0};

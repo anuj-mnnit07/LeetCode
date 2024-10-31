@@ -4,7 +4,7 @@
 #include <vector>
 
 using namespace std;
-
+namespace __55 {
 class Solution {
  public:
   bool canJump(vector<int>& nums) {
@@ -19,5 +19,5 @@ class Solution {
     return true;
   }
 };
-
+}
 #endif

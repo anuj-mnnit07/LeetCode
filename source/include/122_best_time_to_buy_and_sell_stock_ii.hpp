@@ -5,9 +5,10 @@
 
 using namespace std;
 
+namespace __122 {
 class Solution {
  public:
-  int maxProfit_ii(vector<int>& prices) {
+  int maxProfit(vector<int>& prices) {
     int sell = 0;
     int profit = 0;
     for (int i = 1; i < prices.size(); i++) {
@@ -19,4 +20,5 @@ class Solution {
   }
 };
 
+}
 #endif

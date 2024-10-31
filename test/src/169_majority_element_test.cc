@@ -1,6 +1,9 @@
 #include "169_majority_element.hpp"
 
 #include <gtest/gtest.h>
+
+using namespace __169;
+
 TEST(_169_majority_element, test_1) {
   Solution s;
   std::vector<int> nums = {3, 2, 3};

@@ -1,6 +1,7 @@
 #include "55_jump_game.hpp"
 
 #include <gtest/gtest.h>
+using namespace __55;
 TEST(_55_jump_game, test_1) {
   vector<int> nums = {2, 3, 1, 1, 4};
   bool expected_output = true;
@@ -43,7 +44,7 @@ TEST(_55_jump_game, test_5) {
 
 TEST(_55_jump_game, test_6) {
   vector<int> nums = {2, 5, 0, 0};
-  bool expected_output = false;
+  bool expected_output = true;
   Solution s;
   int output = s.canJump(nums);
   EXPECT_EQ(expected_output, output);

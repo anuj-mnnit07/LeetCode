@@ -2,6 +2,8 @@
 
 #include <gtest/gtest.h>
 
+using namespace __26;
+
 TEST(_26_remove_duplicate_from_sorted_array, test_1) {
   Solution s;
   std::vector<int> nums = {1, 1, 2};

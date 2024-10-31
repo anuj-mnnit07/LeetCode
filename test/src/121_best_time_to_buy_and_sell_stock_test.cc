@@ -1,6 +1,9 @@
 #include "121_best_time_to_buy_and_sell_stock.hpp"
 
 #include <gtest/gtest.h>
+
+using namespace __121;
+
 TEST(_121_best_time_to_buy_and_sell_stock, test_1) {
   Solution s;
   vector<int> input = {7, 1, 5, 3, 6, 4};

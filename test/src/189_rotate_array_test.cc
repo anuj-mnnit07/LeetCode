@@ -1,6 +1,9 @@
 #include "189_rotate_array.hpp"
 
 #include <gtest/gtest.h>
+
+using namespace __189;
+
 TEST(_189_rotate_array, test_1) {
   Solution s;
   std::vector<int> input = {1, 2, 3, 4, 5, 6, 7};

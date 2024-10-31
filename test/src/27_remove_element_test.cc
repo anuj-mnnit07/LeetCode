@@ -3,6 +3,7 @@
 #include <gtest/gtest.h>
 
 #include <algorithm>
+using namespace __27;
 TEST(_27_remove_element, test_1) {
   Solution s;
   std::vector<int> nums = {3, 2, 2, 3};

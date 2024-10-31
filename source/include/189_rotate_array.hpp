@@ -3,6 +3,8 @@
 
 #include <vector>
 
+namespace __189 {
+
 using namespace std;
 class Solution {
   void reverse(vector<int>& nums, int start, int end) {
@@ -23,4 +25,6 @@ class Solution {
     reverse(nums, 0, nums.size() - 1);
   }
 };
+
+}
 #endif

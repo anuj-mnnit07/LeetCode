@@ -4,6 +4,8 @@
 #include <vector>
 using namespace std;
 
+namespace __26 {
+
 class Solution {
  public:
   int removeDuplicates(vector<int>& nums) {
@@ -24,4 +26,6 @@ class Solution {
     return k;
   }
 };
+
+}
 #endif

@@ -1,6 +1,8 @@
 #include "80_remove_duplicates_from_sorted_array_ii.hpp"
 
 #include <gtest/gtest.h>
+using namespace __80;
+
 TEST(_80_remove_duplicates_from_sorted_array_ii, test_1) {
   Solution s;
   vector<int> input = {1, 1, 1, 2, 2, 3};

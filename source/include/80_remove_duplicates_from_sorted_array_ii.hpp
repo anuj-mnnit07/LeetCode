@@ -1,6 +1,9 @@
+#ifndef __80_REMOVE_DUPLICATES_FROM_SORTED_ARRAY_HPP__
+#define __80_REMOVE_DUPLICATES_FROM_SORTED_ARRAY_HPP__
 
 #include <vector>
 using namespace std;
+namespace __80 {
 
 class Solution {
  public:
@@ -16,3 +19,7 @@ class Solution {
     return k;
   }
 };
+
+}
+
+#endif
