@@ -1,6 +1,15 @@
 [*]
-end_of_line = lf
-insert_final_newline = true
+trim_trailing_whitespace = true
 indent_style = space
 indent_size = 2
-trim_trailing_whitespace = true
+tab_width = 2
+max_line_length = 80
+end_of_line = lf
+align_trailing_comments = true
+insert_final_newline = true
+brace_style = Stroustrup
+break_before_braces = Allman
+allow_short_blocks_on_single_line = false
+allow_short_functions_on_single_line = false
+allow_short_if_statements_on_single_line = false
+allow_short_loops_on_single_line = false

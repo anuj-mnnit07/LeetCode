@@ -27,5 +27,5 @@ class Solution {
   }
 };
 
-}
+}  // namespace __26
 #endif

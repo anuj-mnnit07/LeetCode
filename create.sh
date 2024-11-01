@@ -9,7 +9,7 @@ while getopts ":f:n:h:" opt; do
   case $opt in
     f) file_name="$OPTARG"
     ;;
-    n) namespace="$OPTARG"
+    n) name_space="$OPTARG"
     ;;
     h) header_extension="$OPTARG"
     ;;
@@ -73,7 +73,7 @@ cat <<EOF >> test/src/${file_name}_test.cc
 
 #include "${file_name}.${header_extension}"
 
-using namespace __${namespace};
+using namespace __${name_space};
 
 TEST(_${file_name}, test_1) {
   EXPECT_EQ(0, 0);

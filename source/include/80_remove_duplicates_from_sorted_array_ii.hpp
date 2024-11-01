@@ -20,6 +20,6 @@ class Solution {
   }
 };
 
-}
+}  // namespace __80
 
 #endif

@@ -24,5 +24,5 @@ class Solution {
   }
 };
 
-}
+}  // namespace __88
 #endif

@@ -19,5 +19,5 @@ class Solution {
     return true;
   }
 };
-}
+}  // namespace __55
 #endif
