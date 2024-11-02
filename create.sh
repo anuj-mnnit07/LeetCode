@@ -60,8 +60,8 @@ namespace __${name_space} {
 
 
 
-}
-#endif
+} // namespace __${name_space}
+#endif // __${FILE_NAME}_${HEADER_EXTENSION}__
 EOF
 
 cat <<EOF >> source/src/${file_name}.cc
